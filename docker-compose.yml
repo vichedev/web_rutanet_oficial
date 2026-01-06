@@ -1,0 +1,15 @@
+services:
+  web-RutaNet:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: web-RutaNet
+    ports:
+      - "8388:80"
+    networks:
+      - webnet
+    restart: always
+
+networks:
+  webnet:
+    driver: bridge
