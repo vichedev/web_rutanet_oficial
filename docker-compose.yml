@@ -1,9 +1,9 @@
 services:
-  web-RutaNet:
+  web-rutanet: # En minúsculas
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: web-RutaNet
+    container_name: web-rutanet # En minúsculas
     ports:
       - "8388:80"
     networks:
